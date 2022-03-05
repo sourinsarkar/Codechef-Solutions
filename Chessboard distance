@@ -42,15 +42,16 @@ int main() {
     while(tc--) {
         int x,y,x1,y1;
         std::cin >> x >> y >> x1 >> y1;
-        int first = x-x1;
-        if(first < 0) {
-            first = (-1) * first;
-        }
-        int second = y-y1;
-        if(second < 0) {
-            second = (-1) * second;
-        }
-        int maxim = std::max(first, second);
+        //int first = x-x1;
+        //if(first < 0) {
+        //    first = (-1) * first;
+        //}
+        //int second = y-y1;
+        //if(second < 0) {
+        //   second = (-1) * second;
+        //}
+        //int maxim = std::max(first, second);
+        int maxim = std::max(std::abs(x-x1), std::abs(y-y1));
         std::cout << maxim << '\n';
     }
     return 0;
